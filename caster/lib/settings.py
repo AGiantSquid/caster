@@ -212,8 +212,7 @@ def init_default_values():
                        ("rdp_mode", False),
                        ("integer_remap_opt_in", False), 
                        ("integer_remap_crash_fix", False),
-                       ("print_rdescripts", False),
-                       ("history_playback_delay_secs", 1.0)
+                       ("print_rdescripts", False)
                        ])
     
     # pronunciations section

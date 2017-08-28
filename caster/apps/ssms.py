@@ -33,6 +33,9 @@ class SSMSRule(MergeRule):
         "step into":                    R(Key("f11"), rdescript="SSMS: Step Into"),
         "step out [of]":                R(Key("s-f11"), rdescript="SSMS: Step Out"),
         "resume":                       R(Key("f5"), rdescript="SSMS: Resume"),
+        "execute":                                  R(Key("f5"), rdescript="SQL: Count"),
+        "switch focus [<n>]":                       R(Key("f6"), rdescript="SQL: Switch Focus") * Repeat(extra="n"),
+        "back focus [<n>]":                         R(Key("s-f6"), rdescript="SQL: Back Focus") * Repeat(extra="n"),
         }
     extras = [
               Dictation("text"),

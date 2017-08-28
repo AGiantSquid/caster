@@ -35,6 +35,7 @@ class ChromeRule(MergeRule):
         "zoom reset":                   R(Key("c-0"), rdescript="Browser: Reset Zoom"),
         "super refresh":                R(Key("c-f5"), rdescript="Browser: Super Refresh"),
         "switch focus [<n>]":           R(Key("f6/20"), rdescript="Browser: Switch Focus") * Repeat(extra="n"),
+        "back focus [<n>]":             R(Key("s-f6"), rdescript="Browser: Back Focus") * Repeat(extra="n"),
         "[find] next match [<n>]":      R(Key("c-g/20"), rdescript="Browser: Next Match") * Repeat(extra="n"),
         "[find] prior match [<n>]":     R(Key("cs-g/20"), rdescript="Browser: Prior Match") * Repeat(extra="n"),
         "[toggle] caret browsing":      R(Key("f7"), rdescript="Browser: Caret Browsing"), # now available through an add on, was a standard feature
