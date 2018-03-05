@@ -78,7 +78,7 @@ class Javascript(MergeRule):
 
         "this":                         R(Text("this"), rdescript="Javascript: This"),
         "try":                          R(Text("try {}") + Key("left, enter:2, up"), rdescript="Javascript: Try"),
-        "catch":                        R(Text("catch(e) {}") + Key("left, enter:2, up"), rdescript="Javascript: Catch"),
+        "catch block":                        R(Text("catch(e) {}") + Key("left, enter:2, up"), rdescript="Javascript: Catch"),
         
         "throw":                        R(Text("throw "), rdescript="Javascript: Throw"),
         "instance of":                  R(Text("instanceof "), rdescript="Javascript: Instance Of"),

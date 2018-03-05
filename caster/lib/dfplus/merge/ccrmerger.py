@@ -37,7 +37,7 @@ def app_merge(mp):
                 del base.mapping_actual()[spec]
 
 class CCRMerger(object):
-    CORE = ["alphabet", "navigation", "numbers", "punctuation"]
+    CORE = ["alphabet", "navigation", "numbers", "punctuation", "modifiers",]
     _GLOBAL = "global"
     _APP = "app"
     _SELFMOD = "selfmod"

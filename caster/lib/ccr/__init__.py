@@ -1,5 +1,6 @@
 from bash.bash import Bash
 from core.alphabet import Alphabet
+from core.modifiers import Modifiers
 from core.nav import Navigation
 from core.numbers import Numbers
 from core.punctuation import Punctuation

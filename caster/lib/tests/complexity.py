@@ -13,6 +13,7 @@ from dragonfly.grammar.grammar_base import Grammar
 
 from caster.lib import settings
 from caster.lib.ccr.core.alphabet import Alphabet
+from caster.lib.ccr.core.modifiers import Modifiers
 from caster.lib.ccr.core.nav import Navigation
 from caster.lib.ccr.core.numbers import Numbers
 from caster.lib.ccr.core.punctuation import Punctuation
