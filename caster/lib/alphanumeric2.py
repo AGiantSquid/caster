@@ -9,7 +9,7 @@ def get_alphabet_choice(spec):
                       "arch": "a",
                       "brov": "b",
                       "char": "c",
-                      "delta": "d",
+                      "dell": "d",
                       "etch": "e",
                       "fomp": "f",
                       "goof": "g",

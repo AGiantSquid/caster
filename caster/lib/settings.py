@@ -117,7 +117,7 @@ def init_default_values():
         ("SIKULI_SCRIPTS_JAR_PATH", ""),
         ("SIKULI_SERVER_PATH", SETTINGS["paths"]["BASE_PATH"] + "/asynch/sikuli/scripts/xmlrpc_server.sikuli"),
         ("SIKULI_COMPATIBLE_JAVA_EXE_PATH", ""),
-        ("ENGINE_PATH", "C:/Program Files (x86)/Nuance/NaturallySpeaking14/Program/natspeak.exe"),
+        ("ENGINE_PATH", "C:/Program Files (x86)/Nuance/NaturallySpeaking15/Program/natspeak.exe"),
         ("REBOOT_PATH", SETTINGS["paths"]["BASE_PATH"] + "/bin/reboot.bat"),
         ("REBOOT_PATH_WSR", SETTINGS["paths"]["BASE_PATH"] + "/bin/reboot_wsr.bat"),
         ("SETTINGS_WINDOW_PATH", SETTINGS["paths"]["BASE_PATH"] + "/asynch/settingswindow.py"), 

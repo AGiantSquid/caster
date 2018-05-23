@@ -36,7 +36,7 @@ class NavigationNon(MappingRule):
 
         "[show] context menu":              R(Key("s-f10"), rdescript="Context Menu"),
 
-        'chiff':                            R(Function(navigation.kick, nexus=_NEXUS),
+        'chiff | Jeff':                            R(Function(navigation.kick, nexus=_NEXUS),
                                               rdescript="Mouse: Left Click"),
         'kick mid':                         R(Function(navigation.kick_middle, nexus=_NEXUS), rdescript="Mouse: Middle Click"),
         'psychic':                          R(Function(navigation.kick_right, nexus=_NEXUS), rdescript="Mouse: Right Click"),
