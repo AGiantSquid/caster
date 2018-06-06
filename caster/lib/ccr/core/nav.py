@@ -147,6 +147,8 @@ class Navigation(MergeRule):
         "fame [<nnavi50>]":             R(Key("c-left"), rspec="fame", rdescript="Jump word to the Left") * Repeat(extra="nnavi50"),
         "scrish [<nnavi50>]":           R(Key("cs-right"), rspec="scrish", rdescript="Select word to the right") * Repeat(extra="nnavi50"),
         "scram [<nnavi50>]":            R(Key("cs-left"), rspec="scram", rdescript="Select a word to the left") * Repeat(extra="nnavi50"),
+        "(Ollie | Holly)":            R(Key("c-a"), rspec="scram", rdescript="Select a word to the left") * Repeat(extra="nnavi50"),
+
         "(Kate | Kite) [<nnavi50>]":    R(Key("c-del"), rspec="clear", rdescript="Backspace") * Repeat(extra="nnavi50"),
         "trough [<nnavi50>]":           R(Key("c-backspace"), rspec="clear", rdescript="Backspace") * Repeat(extra="nnavi50"),
 
