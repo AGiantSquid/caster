@@ -85,20 +85,19 @@ class NavigationNon(MappingRule):
         Choice("time_in_seconds",
                {"super slow": 5, "slow": 2, "normal": 0.6, "fast": 0.1, "superfast": 0.05
                 }),
-        navigation.get_direction_choice("direction"),
-        navigation.get_direction_choice("direction2"),
-        navigation.TARGET_CHOICE,
-        Choice("dokick",
-               {"kick": 1, "psychic": 2
+              navigation.get_direction_choice("direction"),
+              navigation.get_direction_choice("direction2"),
+              navigation.TARGET_CHOICE, 
+              Choice("dokick",
+                {"kick": 1, "psychic": 2
                 }),
-        Choice("wm",
-               {"ex": 1, "tie": 2
+              Choice("wm",
+                {"ex": 1, "tie": 2
                 }),
-    ]
-
+           ]
     defaults = {
-        "n": 1, "mim": "", "nnavi500": 1, "direction2": "", "dokick": 0, "text": "", "wm": 2
-    }
+            "n": 1, "mim":"", "nnavi500": 1, "direction2":"", "dokick": 0, "text": "", "wm": 2
+           }
 
 
 class Navigation(MergeRule):
