@@ -22,10 +22,10 @@ class PythonNon(MappingRule):
 
 class Python(MergeRule):
     non = PythonNon
-    
-    mapping = {        
+
+    mapping = {
         SymbolSpecs.IF:                 R(Key("i,f,space,colon,left"), rdescript="Python: If"),
-        SymbolSpecs.ELSE:               R(Text("else:")+Key("enter"), rdescript="Python: Else"),        
+        SymbolSpecs.ELSE:               R(Text("else:")+Key("enter"), rdescript="Python: Else"),
         #
         # (no switch in Python)
         SymbolSpecs.BREAK:              R(Text("break"), rdescript="Python: Break"),
@@ -47,45 +47,45 @@ class Python(MergeRule):
         #
         SymbolSpecs.IMPORT:             R(Text( "import " ), rdescript="Python: Import"),
         #
-        SymbolSpecs.FUNCTION:           R(Text("def "), rdescript="Python: Function"),        
+        SymbolSpecs.FUNCTION:           R(Text("def "), rdescript="Python: Function"),
         SymbolSpecs.CLASS:              R(Text("class "), rdescript="Python: Class"),
         #
         SymbolSpecs.COMMENT:            R(Text( "#" ), rdescript="Python: Add Comment"),
         SymbolSpecs.LONG_COMMENT:       R(Text("''''''") + Key("left:3"), rdescript="Python: Long Comment"),
-        #                
+        #
         SymbolSpecs.NULL:               R(Text("None"), rdescript="Python: Null"),
         #
         SymbolSpecs.RETURN:                       R(Text("return "), rdescript="Python: Return"),
         #
         SymbolSpecs.TRUE:               R(Text("True"), rdescript="Python: True"),
         SymbolSpecs.FALSE:              R(Text("False"), rdescript="Python: False"),
-                
-         
-        # Python specific           
-         
-        "sue iffae":                    R(Text("if "), rdescript="Python: Short If"), 
+
+
+        # Python specific
+
+        "sue iffae":                    R(Text("if "), rdescript="Python: Short If"),
         "sue shells":                   R(Text("else "), rdescript="Python: Short Else"),
-          
-         
+
+
         "from":                         R(Text( "from " ), rdescript="Python: From"),
         "self":                         R(Text("self"), rdescript="Python: Self"),
         "long not":                     R(Text(" not "), rdescript="Python: Long Not"),
         "it are in":                    R(Text(" in "), rdescript="Python: In"),          #supposed to sound like "iter in"
-        
+
         "shell iffae | LFA":            R(Key("e,l,i,f,space,colon,left"), rdescript="Python: Else If"),
         "convert to character":         R(Text("chr()")+ Key("left"), rdescript="Python: Convert To Character"),
         "length of":                    R(Text("len()")+ Key("left"), rdescript="Python: Length"),
-         
+
         "global":                       R(Text("global "), rdescript="Python: Global"),
-                        
+        "topple":                       R(Text("tuple("), rdescript="Python: Global"),
         "make assertion":               R(Text("assert "), rdescript="Python: Assert"),
         "list comprehension":           R(Text("[x for x in TOKEN if TOKEN]"), rdescript="Python: List Comprehension"),
-       
+
         "[dot] (pie | pi)":             R(Text(".py"), rdescript="Python: .py"),
         "jason":                        R(Text("json"), rdescript="Python: json"),
         "identity is":                  R(Text(" is "), rdescript="Python: is"),
-          
-         
+
+
         }
 
     extras   = [Dictation("text"),]

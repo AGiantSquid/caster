@@ -11,11 +11,11 @@ from caster.lib.dfplus.state.short import R
 
 class Punctuation(MergeRule):
     pronunciation = CCRMerger.CORE[3]
-    
+
     mapping = {
-        "semper":                           R(Key("semicolon"), rdescript="Semicolon"),        
+        "semper":                           R(Key("semicolon"), rdescript="Semicolon"),
         "quotes":                           R(Key("dquote,dquote,left"), rdescript="Quotation Marks"),
-        "thin quotes":                      R(Key("apostrophe,apostrophe,left"), rdescript="Thin Quotation Marks"),               
+        "thin quotes":                      R(Key("apostrophe,apostrophe,left"), rdescript="Thin Quotation Marks"),
         "[is] greater than":                R(Key("rangle"), rdescript="> Comparison"),
         "[is] less than":                   R(Key("langle"), rdescript="< Comparison"),
         "[is] greater [than] [or] equal [to]":  R(Key("rangle, equals"), rdescript=">= Comparison"),
@@ -35,12 +35,12 @@ class Punctuation(MergeRule):
         "starling":                         R(Key("asterisk"), rdescript="Asterisk"),
         "questo":                           R(Text("?"), rdescript="Question Mark"),
         "comma":                            R(Text(","), rdescript="Comma"),
-        "carrot":                           R(Text("^"), rdescript="Carat"),                     
+        "carrot":                           R(Text("^"), rdescript="Carat"),
         "(period | dot)":                   R(Text("."), rdescript="Dot"),
         "atty":                             R(Text("@"), rdescript="At Sign"),
         "hash tag":                         R(Text("#"), rdescript="Hash Tag"),
         "apostrophe":                       R(Text("'"), rdescript="Apostrophe"),
-        "underscore":                       R(Text("_"), rdescript="Underscore"),        
+        "underscore":                       R(Text("_"), rdescript="Underscore"),
         "backslash":                        R(Text("\\"), rdescript="Back Slash"),
         "slash":                            R(Text("/"), rdescript="Forward Slash"),
         "Dolly":                            R(Text("$"), rdescript="Dollar Sign"),
@@ -48,9 +48,9 @@ class Punctuation(MergeRule):
         'tabby [<npunc>]':                  R(Key("tab"), rdescript="Tab") * Repeat(extra="npunc"),
         "boom":                             R(Text(", "), rdescript="Comma + Space"),
         "ampersand":                        R(Key("ampersand"), rdescript="Ampersand"),
-        
+
           }
- 
+
 
     extras = [
             IntegerRefST("npunc", 0, 10),
