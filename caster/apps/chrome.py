@@ -65,9 +65,9 @@ class ChromeRule(MergeRule):
         "IRC identify":                 R(Text("/msg NickServ identify PASSWORD"), rdescript="IRC Chat Channel Identify"),
         }
     extras = [
-              Dictation("dict"),
-              IntegerRefST("n", 1, 10),
-             ]
+        Dictation("dict"),
+        IntegerRefST("n", 1, 10),
+    ]
     defaults = {"n": 1, "dict": "nothing"}
 
 

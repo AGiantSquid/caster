@@ -18,10 +18,10 @@ class SublimeRule(MergeRule):
             R(Key("c-r"), rdescript="Sublime: Go To Symbol"),
         "go to word":
             R(Key("c-semicolon"), rdescript="Sublime: Go To Word"),
-        "uppercase":
+        "transform upper":
             R(Key("control:down, k, u, control:up"),
               rdescript="Sublime: Transform Upper"),
-        "lowercase":
+        "transform lower":
             R(Key("control:down, k, l, control:up"),
               rdescript="Sublime: Transform Lower"),
         "outdent":
@@ -51,9 +51,11 @@ class SublimeRule(MergeRule):
             Repeat(extra="n"),
     }
     extras = [
+        Dictation("text"),
+        Dictation("mim"),
         IntegerRefST("n", 1, 1000),
     ]
-    defaults = {"n": 1}
+    defaults = {"n": 1, "mim": ""}
 
 
 #---------------------------------------------------------------------------
