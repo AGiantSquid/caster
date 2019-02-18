@@ -59,12 +59,14 @@ class NavigationNon(MappingRule):
 
         "refresh":                          R(Key("c-r"), rdescript="Refresh"),
 
-        "Wendy Max":                        R(Key("w-up"), rdescript="Maximize Window"),
+        "(windy | Wendy) Max":                        R(Key("w-up"), rdescript="Maximize Window"),
         "move window":                      R(Key("a-space, r, a-space, m"), rdescript="Move Window"),
-        "window (left | lease) [<n>]":      R(Key("w-left"), rdescript="Window Left") * Repeat(extra="n"),
-        "window (right | ross) [<n>]":      R(Key("w-right"), rdescript="Window Right") * Repeat(extra="n"),
-        "monitor (left | lease) [<n>]":     R(Key("sw-left"), rdescript="Monitor Left") * Repeat(extra="n"),
-        "monitor (right | ross) [<n>]":     R(Key("sw-right"), rdescript="Monitor Right") * Repeat(extra="n"),
+        "(windy | Wendy) (left | lease) [<n>]":      R(Key("w-left"), rdescript="Window Left") * Repeat(extra="n"),
+        "(windy | Wendy) (right | ross) [<n>]":      R(Key("w-right"), rdescript="Window Right") * Repeat(extra="n"),
+        "mahni (left | lease) [<n>]":     R(Key("sw-left"), rdescript="Monitor Left") * Repeat(extra="n"),
+        "manhi (right | ross) [<n>]":     R(Key("sw-right"), rdescript="Monitor Right") * Repeat(extra="n"),
+        "workace lease":     R(Key("cw-left"), rdescript="Workspace Left"),
+        "workace ross":     R(Key("cw-right"), rdescript="Monitor Right"),
         "(next | prior) window":            R(Key("ca-tab, enter"), rdescript="Next Window"),
         "switch (window | windows)":        R(Key("ca-tab"), rdescript="Switch Window") * Repeat(extra="n"),
 

@@ -4,7 +4,7 @@ Created on Sep 27, 2015
 @author: synkarius
 '''
 from dragonfly.actions.action_text import Text
-
+from caster.lib import control
 from caster.lib.dfplus.merge.mergepair import MergeInf
 from caster.lib.dfplus.state.short import R
 

@@ -17,7 +17,6 @@ DIRECTION_STANDARD = {
     "doom [E]": "down",
     "crimp [E]": "left",
     "Ross [E]": "right",
-    "back": "left"
 }
 '''
 Note: distinct token types were removed because
