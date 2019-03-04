@@ -22,8 +22,7 @@ class Again(MergeRule):
             name="repeat that",
             extras=[IntegerRefST("n", 1, 50)],
             defaults={"n": 1},
-            mapping={
-                "again (<n> [(times|time)] | do)":
+            mapping={"wink [<n>]":
                     R(Function(lambda n: self._create_asynchronous(n)), show=False)
             })
 
